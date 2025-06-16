@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+ <title>Document</title>
+</head>
+<body>
+ <script>
+let number = "153";
+let splited = number.split("");
+console.log(splited);
+
+let num1 = splited[0];
+let num2 = splited[1];
+let num3 = splited[2];
+
+let convertedtoNumber1 = parseInt(num1);
+let convertedtoNumber2 = parseInt(num2);
+let convertedtoNumber3 = parseInt(num3);
+
+let qnumber1 = Math.pow( convertedtoNumber1,3)
+let qnumber2 = Math.pow( convertedtoNumber2,3)
+let qnumber3 = Math.pow( convertedtoNumber3,3)
+
+console.log(qnumber1+qnumber2+qnumber3);
+
+
+
+let givenNumber = "153";
+let splitted ="";
+let convertedtoNumber = 0;
+let powNumber = 0;
+let result = 0;
+
+for (let i=0; i<3; i++){
+splited = givenNumber.split("");
+convertedtoNumber = parseInt(splited[i]);
+powNumber = Math.pow(convertedtoNumber,3);
+result += powNumber;
+
+}
+console.log(result);
+
+</script>
+
+
+
+
+</body>
+</html>

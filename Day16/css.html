@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        for(let i=0; i<10; i++) {
+            if(i===5) {
+                break;
+            }
+            //console.log(i);
+        }
+
+        
+    </script>
+
+    <script>
+        for(let i=0; i<5; i++) {
+            if(i===2) {
+                continue;
+            }
+            //console.log(i);
+        }
+
+    </script>
+
+    <script>
+        for(let i=1; i<10; i++) {
+         if(i===7){
+            break;
+         }
+         //console.log(i);
+        }
+    </script>
+
+    <script>
+        for(let i=0; i<=5; i++) {
+            if(i%2==0){
+                continue;
+            }
+           //console.log("odd number: ",i);
+                
+         }
+
+    </script>
+
+    <script>
+        for(let i=1; i<10; i++) {
+         if(i===7){
+           
+            console.log("Reached 7-existing loop ",i);
+            break;
+         }
+         else if(i%2==0) {
+         
+            console.log("Even number:"+i+"-skipping");
+            continue;
+         }
+         else {
+            console.log("Odd number: ",i);
+         }
+        }
+         
+       
+        
+    </script>
+
+
+</body>
+</html>

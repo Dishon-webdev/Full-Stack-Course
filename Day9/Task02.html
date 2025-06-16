@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Task 02
+        </title>
+    </head>
+    <body>
+        <h1>Age checker for voting</h1>
+
+        <div id="ageResult">Check your age</div>
+
+        <button onclick="checkAge()">Check Age</button>
+
+        <script>
+            let personAge = 18;
+
+            function checkAge(age) {
+
+                if(age > 17 ) {
+                    result = "You are eligible to vote";
+                }else{
+                    result = "You are not eligible to vote";
+                }
+
+                document.getElementById("ageResult").innerHTML=result;
+            }
+        </script>
+
+
+
+
+       
+    
+
+    </body>
+</html>

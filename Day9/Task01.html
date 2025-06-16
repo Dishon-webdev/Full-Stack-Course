@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Task 01
+        </title>
+    </head>
+    <body>
+        <h1>Temperature Checker</h1>
+
+        <div id="temperatureResult">Waiting for result...</div>
+    <button onclick="checkTemperature(37)">Check Temperature</button>
+
+    <script>
+        function checkTemperature(temp) {
+            let message = "";
+            if (temp > 37) {
+                message = "You have a fever!";
+            } else {
+                message = "Your temperature is normal.";
+            }
+
+            document.getElementById("temperatureResult").innerHTML = message;
+        }
+    </script>
+    </body>
+</html>

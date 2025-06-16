@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <script>
+        function calculateAge(dob) {
+        const birthDate = new Date(dob);
+        const today = new Date();
+     let age = today.getFullYear() - birthDate.getFullYear();
+         const m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+         age--;
+     }
+     return age;
+}
+
+const dob = "2003-06-20";
+const age = calculateAge(dob);
+console.log("Age:", age);
+    </script>
+
+    <script>
+        < input type="date" id="dobinput">
+        <button onclick="getDOB()">submit</button>
+            
+    </script>
+
+    function
+</body>
+</html>

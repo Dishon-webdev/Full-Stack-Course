@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="inputbox">inputbox</label>
+    <input type="text" id="input" placeholder="typehere" />
+    <button type="submit" onclick="displayrandom()">Random Generate</button>
+    <br />
+
+    <input type="text" id="getvalue" placeholder="typehere" />
+
+    <button type="submit" onclick="calculate()">Get result</button>
+    <input type="text" id="displayresult" placeholder="typehere" />
+
+    <script>
+      let getRandomNumber = 0;
+
+      function displayrandom() {
+        event.preventDefault();
+        getRandomNumber = Math.floor(Math.random() * 10);
+
+        document.getElementById("input").value = getRandomNumber;
+      }
+
+      function calculate() {
+        let setValuve = document.getElementById("getvalue").value;
+
+        let calculation = getRandomNumber * setValuve;
+        //alert(calculation);
+        document.getElementById("displayresult").value = calculation;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+<head>
+ 
+ <title>Document</title>
+</head>
+<body>
+    <script>
+
+let Given = 123;
+let original = Given;
+let number = 0;
+let result = 0;
+
+for (let i=0; i<3; i++);{
+number = original % 10;
+result += Math.pow(number, 3);
+original = Math.floor(original / 10);
+
+console.log("number" , number);
+console.log("original : ", original);
+console.log("result ", result);
+console.log("....................")
+
+}
+console.log("result : ", result);
+
+if ( result = Given){
+ console.log("it's Armstrong Number");
+}else{
+ console.log("Not a Armstrong number");
+
+}

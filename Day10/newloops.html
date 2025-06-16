@@ -1,0 +1,43 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>loops</title>
+</head>
+<body>
+
+<script>
+ function useforloop(){
+     for(let i = 0; i < 3; i++){
+     console.log("Looping number : " + i);
+
+     }
+
+
+     }
+     useforloop();
+
+     function useDowhileLoop(){
+     let dw=0;
+     do{
+     console.log("do while loop:" +dw);
+     dw++;
+ } while (dw<5);
+
+ }
+ useDowhileLoop();
+
+ 
+ let students = ["Ann", "Shiyana", "Dilu"];
+
+ function useForEachloop() {
+ students.forEach(function(name) {
+ console.log(name);
+ });
+ }
+
+ useForEachloop();
+ </script>
+ 
+</body>
+</html>

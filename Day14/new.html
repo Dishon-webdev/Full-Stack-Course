@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="Firstname">Firstname:</label>
+      <input
+        type="text"
+        id="Firstname"
+        name="Firstname"
+        placeholder="enter your name here"
+        required
+      />
+      <br /><br />
+
+      <label for="Lastname">Lastname:</label>
+      <input type="text" id="Lastname" name="Lastname" required />
+ <br><br>
+      <label for="Fullname">Fullname:</label> 
+      <input type="text" id="Fullname">
+ <br><br>
+      <button type="submit" onclick="displayfullname()">Submit</button>
+        
+    </form>
+
+    <script>
+        function displayfullname(){
+            event.preventDefault();
+            let input={
+                Fname:document.getElementById("Firstname").value,
+                Lname:document.getElementById("Lastname").value,
+                Fullname:function(){
+                    return this.Fname+this. Lname;
+                }
+            }
+            document.getElementById("Fullname").value=input.Fullname();
+        }
+    </script>
+  </body>
+</html>
+
+
+

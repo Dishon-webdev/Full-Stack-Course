@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+   
+</head>
+ 
+<style>
+    button {
+    background-color: aquamarine;
+    color: blue;
+    font-weight: 800px;
+    }
+
+    button:hover{
+        background-color: tomato;
+    }
+
+    h2{
+        background-color: aquamarine;
+        color: blue;
+    }
+</style>
+<body>
+    <center>
+    <h2>Calculator</h2>
+
+    <form>
+        <label for="firstnumber">First Number: </label>
+        <input type="number" id="firstnumber"> <br><br>
+
+        <label for="secondnumber">Second Number: </label>
+        <input type="number" id="secondnumber"> <br><br>
+
+        <button type="button" onclick="Addition()">+</button>
+        <button type="button" onclick="Subtraction()">-</button>
+        <button type="button" onclick="Module()">%</button>
+        <button type="button" onclick="multiple()">*</button>
+
+        <br><br>
+
+        <label for="result">Result: </label>
+        <input type="number" id="result" readonly>
+    </form>
+    </center>
+
+    <script>
+        function getInputvalues() {
+    const firstnumber = Number(document.getElementById("firstnumber").value);
+    const secondnumber = Number(document.getElementById("secondnumber").value);
+    return { firstnumber, secondnumber };
+}
+
+
+
+        function Addition() {
+            const { firstnumber,secondnumber}=getInputvalues();
+            document.getElementById('result').value=firstnumber + secondnumber;
+        }
+        
+
+        function Subtraction() {
+           const { firstnumber, secondnumber}=getInputvalues();
+           document.getElementById('result').value=firstnumber - secondnumber;
+
+        }
+
+        function Module() {
+             const { firstnumber, secondnumber}=getInputvalues();
+            document.getElementById('result').value=firstnumber % secondnumber;
+
+        }
+
+        function multiple() {
+            const { firstnumber, secondnumber}=getInputvalues();
+            document.getElementById('result').value=firstnumber * secondnumber;
+        }
+
+    </script>
+</body>
+</html>

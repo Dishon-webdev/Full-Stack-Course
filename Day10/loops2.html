@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>
+For Loop
+ </title>
+ </head>
+ <body>
+ <script>
+ function useForLoop() {
+ for(let a=0 ; a<=6 ; a++) {
+ console.log("Looping number : " + a) ;
+ 
+ }
+ }
+useForLoop();
+
+function useDoWhileLoop() {
+ let dw=0;
+ do {
+  console.log("I'm from do while : " + dw);
+ dw++ ;
+
+ } while (dw<5);
+
+}
+useDoWhileLoop();
+
+function useForEachLoop() {
+ let students=["Dishon", "Ajith","Akachcheliyan"];
+ students.forEach(function (name) {
+console.log("Student name: " + name);
+
+ });
+}
+useForEachLoop();
+</script>
+
+</body>
+</html>

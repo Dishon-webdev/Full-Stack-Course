@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Find the sum of numbers in an array -->
+    <script>
+      const number = [1, 2, 3, 4, 5];
+      let sum = 0;
+      for (let i = 0; i < number.length; i++) {
+        sum += number[i];
+      }
+
+      console.log("total sum: " + sum);
+    </script>
+
+    <!-- Using array find the vowels in your name-->
+    <script></script>
+
+    <!-- Create the function to find the number is odd or even-->
+    <script>
+      function checkOddOrEven(number) {
+        if (number % 2 === 0) {
+          return "Even Number: " + number;
+        } else {
+          return "Odd Number: " + number;
+        }
+      }
+
+      console.log(checkOddOrEven());
+    </script>
+
+    <!-- Find the numbers prime or not-->
+    <script></script>
+
+    <script>
+      const cartItems = [
+        { name: "Item1", qty: "2", price: "50" },
+        { name: "Item2", qty: "1", price: "80" },
+        { name: "Item3", qty: "3", price: "30" },
+      ];
+
+      function calculateTotals(items, taxRate = 0.1, discount = 0) {
+        let subtotal = 0;
+
+        items.forEach((item) => {
+          item.subtotal = item.qty * item.price;
+          subtotal += item.subtotal;
+        });
+
+        const tax = subtotal * taxRate;
+        const total = subtotal + tax;
+        const grandTotal = total - discount;
+
+        return {
+          items,
+          subtotal,
+          tax,
+          total,
+          discount,
+          grandTotal,
+        };
+      }
+
+      const result = calculateTotals(cartItems, 0.05, 10);
+      console.log("subtotal: ", result.subtotal);
+      console.log("Tax: ", result.tax);
+      console.log("Total: ", result.total);
+      console.log("Discount: ", result.discount);
+      console.log("Grand Total: ", result.grandTotal);
+    </script>
+  </body>
+</html>
+
+

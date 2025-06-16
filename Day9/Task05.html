@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Password Strength Checker</h1>
+
+<div id="passwordResult">Check password strength</div>
+<button onclick="checkPasswordStrength('abc123')">Check Password</button>
+
+<script>
+function checkPasswordStrength(password) {
+ let result = "";
+ if (password.length >= 8) {
+  result = " Strong password";
+ } else {
+  result = " Weak password. Use at least 8 characters.";
+ }
+ document.getElementById("passwordResult").innerHTML = result;
+}
+</script>
+
+</body>
+</html>  

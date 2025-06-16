@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        let name="dishon";
+         name="praba";
+        var email="dishon@gmail.com";
+        var email="ajith@gmail.com";
+        const age="21";
+         console.log("Result of const : "+age) 
+    </script>
+
+    <script>
+        let a=100; //arithmetic operators
+        let b=10;  //arithmetic operators
+        let c=a+b; //arithmetic operators
+        console.log("Result of arithmetic operator (+)  "+c);
+
+        let d=b-c; //arithmetic operators
+        console.log("Result of arithmetic operator (-)  "+d);
+
+        let e=a*b; //arithmetic operators
+        console.log("Result of arithmetic operator (*) "+e);
+
+        let f=a / b; //arithmetic operators
+        console.log("Result of arithmetic operator (/) "+f);
+
+        let g="a" + "b"; //arithmetic operators
+        console.log("Result of arithmetic operator in string: "+g);
+
+        let h="a" + b; 
+        console.log("Result of arithmetic operator in string: "+h);
+
+        let i="a" * b; 
+         console.log("Result of arithmetic operator in string: "+i);
+
+        let j="a" / "b";
+          console.log("Result of arithmetic operator in string: "+j);
+
+
+
+    </script>
+
+    <div id="display">
+        Here is your result
+    </div>
+
+    <button id="btn" onclick="result(10)">Click Here</button>
+
+    <script>
+        //condition operators
+        function result(mark) {
+            console.log("Hi students I'm inside the function  "+mark);
+            let yourresult= "";
+            if (mark > 50) {
+                yourresult = "You got selected";
+            }else{
+                yourresult = "You are not selected better luck next time";
+            }
+
+            document.getElementById("display").innerHTML=yourresult;
+        }
+        
+    </script>
+</body>
+</html>

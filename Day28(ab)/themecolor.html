@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Color</title>
+</head>
+<body>
+    <select id="choosethemes" onclick="choosetheme()">
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+    </select>
+    
+    <button id="nocolor" value="white" onclick="buttoncolor()">Reset</button>
+
+    <script>
+        function choosetheme() {
+            const selectedcolor = document.getElementById("choosethemes").value;
+            document.body.style.backgroundColor = selectedcolor;
+        }
+
+        function buttoncolor() {
+            const buttonset = document.getElementById("nocolor").value;
+            document.body.style.backgroundColor = buttonset;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Calculator</title>
+</head>
+<body>
+  <form id="form">
+    <label for="inputbox">Random Number</label>
+    <input type="text" id="inputbox" name="inputbox" >
+    <button type="button" onclick="displayNumber()">Generate Random Number</button>
+    <br><br>
+
+    <label for="box2">Multiplier</label>
+    <input type="text" id="box2" name="box2">
+    <button type="button" onclick="calculate()">Calculate</button>
+    <br><br>
+
+    <label for="output">Result</label>
+    <input type="text" id="output" name="output">
+  </form>
+
+  <script>
+    let getRandomNumber = 0; 
+    function displayNumber() {
+      getRandomNumber = Math.floor(Math.random() * 10);
+      document.getElementById("inputbox").value = getRandomNumber;
+    }
+
+    function calculate() {
+      let multiplier =(document.getElementById("box2").value);
+      let result = getRandomNumber * multiplier;
+      document.getElementById("output").value = result;      
+    }
+    
+  </script>
+</body>
+</html>

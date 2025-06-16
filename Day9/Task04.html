@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task 04</title>
+    </head>
+    <body>
+        <h1>Daily Arrival Checker</h1>
+
+        <div id="yourTime">Are you on time?</div>
+
+        <div> <input type="number" id="time"></div>
+
+        <button onclick="checktime()">Click here to check</button>
+
+        <script>
+
+            function checktime() {
+             let time= "";
+                let number=document.getElementById("time").value;
+
+             if(number > 8 ) {
+                time = "You are  late"
+             }else{
+                time = "You are on time";
+             }
+
+             document.getElementById("yourTime").innerHTML=time;
+            }
+        </script>
+        
+    </body>
+</html>

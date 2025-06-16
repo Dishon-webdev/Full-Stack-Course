@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Task 03
+        </title>
+    </head>
+    <body>
+        <h1>Speed Checker</h1>
+
+        <div id="yourSpeed">This is your speed</div>
+
+        <button onclick="checkSpeed(90)">Click here to check speed</button>
+
+        <script>
+            let topspeed = 50;
+
+            function checkSpeed(speed) {
+
+            if(speed > 49 ) {
+                topspeed = "You are going fast";
+            }else{
+                topspeed = "You are moving at a normal speed";
+            }
+
+            document.getElementById("yourSpeed").innerHTML=topspeed;
+            }
+        </script>
+    </body>
+</html>
