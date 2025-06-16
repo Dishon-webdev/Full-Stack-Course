@@ -5,254 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practsing Bootstrap</title>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
-
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <!-- <link rel="stylesheet" href="bootstrap.css"> -->
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-          crossorigin="anonymous"
-        ></script>
+    <p class="text-primary">
+      A full stack developer is someone who can build both the front-end (what
+      users see) and back-end (server, database, logic) of a web application.
+    </p>
 
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-          crossorigin="anonymous"
-        />
-      </head>
+    <p class="text-success">
+      A full stack developer is someone who can build both the front-end (what
+      users see) and back-end (server, database, logic) of a web application.
+    </p>
 
-      <body>
-        <p class="text-primary">
-          A full stack developer is someone who can build both the front-end
-          (what users see) and back-end (server, database, logic) of a web
-          application.
-        </p>
+    <p class="text-warning">
+      A full stack developer is someone who can build both the front-end (what
+      users see) and back-end (server, database, logic) of a web application.
+    </p>
 
-        <p class="text-success">
-          A full stack developer is someone who can build both the front-end
-          (what users see) and back-end (server, database, logic) of a web
-          application.
-        </p>
+    <p class="text-danger">
+      A full stack developer is someone who can build both the front-end (what
+      users see) and back-end (server, database, logic) of a web application.
+    </p>
 
-        <p class="text-warning">
-          A full stack developer is someone who can build both the front-end
-          (what users see) and back-end (server, database, logic) of a web
-          application.
-        </p>
+    <p class="text-info">
+      A full stack developer is someone who can build both the front-end (what
+      users see) and back-end (server, database, logic) of a web application.
+    </p>
 
-        <p class="text-danger">
-          A full stack developer is someone who can build both the front-end
-          (what users see) and back-end (server, database, logic) of a web
-          application.
-        </p>
+    <!-- Dark Table -->
+    <div class="container mt-3">
+      <h2>Dark Table</h2>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Mobile No</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dishon</td>
+            <td>Consalves</td>
+            <td>consalvesdishon16@gmail.com</td>
+            <td>+94 76 041 0620</td>
+          </tr>
+          <tr>
+            <td>Akachcheliyan</td>
+            <td>Sasikumar</td>
+            <td>akachcheliyan@gmail.com</td>
+            <td>+94 76 054 7453</td>
+          </tr>
+          <tr>
+            <td>Ajith</td>
+            <td>Selventhiran</td>
+            <td>ajith@gmail.com</td>
+            <td>+94 76 756 4319</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-        <p class="text-info">
-          A full stack developer is someone who can build both the front-end
-          (what users see) and back-end (server, database, logic) of a web
-          application.
-        </p>
+    <!-- Striped Rows -->
+    <div class="container mt-3">
+      <h2>Striped Rows</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dishon</td>
+            <td>Consalves</td>
+            <td>dishon@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Akachcheliyan</td>
+            <td>Sasikumar</td>
+            <td>akachcheliyan@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Ajith</td>
+            <td>Selventhiran</td>
+            <td>ajith@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-        <!-- Dark Table -->
-        <div class="container mt-3">
-          <h2>Dark Table</h2>
+    <!-- Small Table -->
+    <div class="container mt-3">
+      <h2>Small Table</h2>
+      <table class="table table-bordered table-sm">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dishon</td>
+            <td>Consalves</td>
+            <td>dishon@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Akachcheliyan</td>
+            <td>Sasikumar</td>
+            <td>akachcheliyan@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Ajith</td>
+            <td>Selventhiran</td>
+            <td>ajith@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-          <table class="table table-dark table-hover">
-            <thead>
-              <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-                <th>Mobile No</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Dishon</td>
-                <td>Consalves</td>
-                <td>consalvesdishon16@gmail.com</td>
-                <td>+94 76 041 0620</td>
-              </tr>
-              <tr>
-                <td>Akachcheliyan</td>
-                <td>Sasikumar</td>
-                <td>akachcheliyan@gmail.com</td>
-                <td>+94 76 054 7453</td>
-              </tr>
-              <tr>
-                <td>Ajith</td>
-                <td>Selventhiran</td>
-                <td>ajith@gmail.com</td>
-                <td>+94 76 756 4319</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <!-- Rounded corners -->
+    <img
+      src="art.webp"
+      class="rounded-circle"
+      alt="Art"
+      width="250px"
+      height="250px"
+    />
 
-        <!-- Striped Rows -->
+    <!-- Thumbnail -->
+    <img
+      src="art.webp"
+      class="img-thumbnail"
+      alt="Art"
+      width="250px"
+      height="250px"
+    />
 
-        <div class="container mt-3">
-          <h2>Striped Rows</h2>
+    <br /><br />
 
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Dishon</td>
-                <td>Consalves</td>
-                <td>dishon@gmail.com</td>
-              </tr>
-              <tr>
-                <td>Akachcheliyan</td>
-                <td>Sasikumar</td>
-                <td>akachcheliyan@gmail.com</td>
-              </tr>
-              <tr>
-                <td>Ajith</td>
-                <td>Selventhiran</td>
-                <td>ajith@gmail.com</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <!-- Aligning Images -->
+    <img src="wood.webp" class="float-start" width="250px" height="250px" />
+    <img src="wood.webp" class="float-end" width="250px" height="250px" />
 
-        <!-- Small Table -->
-        <div class="container mt-3">
-          <h2>Small Table</h2>
+    <!-- Centered Image -->
+    <img
+      src="art.webp"
+      class="mx-auto d-block"
+      width="250px"
+      height="250px"
+    />
 
-          <table class="table table-bordered table-sm">
-            <thead>
-              <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Dishon</td>
-                <td>Consalves</td>
-                <td>dishon@gmail.com</td>
-              </tr>
-              <tr>
-                <td>Akachcheliyan</td>
-                <td>Sasikumar</td>
-                <td>akachcheliyan@gmail.com</td>
-              </tr>
-              <tr>
-                <td>Ajith</td>
-                <td>Selventhiran</td>
-                <td>ajith@gmail.com</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+    <!-- Responsive Image -->
+    <img
+      class="img-fluid"
+      src="art.webp"
+      alt="art"
+      width="800"
+      height="500"
+    />
 
-        <!-- Rounded corners -->
-        <img
-          src="art.webp"
-          class="rounded-circle"
-          alt="Art"
-          width="250px"
-          height="250px"
-        />
+    <br /><br />
 
-        <!-- Thumbnail -->
-        <img
-          src="art.webp"
-          class="img-thumbnail"
-          alt="Art"
-          width="250px"
-          height="250px"
-        />
+    <!-- Jumbotron -->
+    <div class="mt-4 p-5 bg-primary text-white rounded">
+      <h1>Jumbotron Example</h1>
+      <h4>What is a Full Stack Developer?</h4>
+      <p>
+        A full stack developer is a programmer skilled in both front-end and
+        back-end development. They can create the user interface using
+        technologies like HTML, CSS, and JavaScript, and also handle server-side
+        logic, databases, and APIs using tools like Node.js, Python, or PHP.
+        This makes them versatile and capable of building complete web
+        applications from start to finish.
+      </p>
+    </div>
 
-        <br /><br />
+    <br /><br />
 
-        <!-- Aligning Images -->
-        <img src="wood.webp" class="float-start" width="250px" height="250px" />
-        <img src="wood.webp" class="float-end" width="250px" height="250px" />
+    <!-- Alerts -->
+    <div class="alert alert-danger">
+      <strong>Success!</strong> Indicates a successful or positive action.
+    </div>
 
-        <!-- <br><br> -->
+    <div class="alert alert-success">
+      <strong>Success!</strong> You should
+      <a href="#" class="alert-link">read this message</a>.
+    </div>
 
-        <!-- Centered Image -->
-        <img
-          src="art.webp"
-          class="mx-auto d-block"
-          width="250px"
-          height="250px"
-        />
-
-        <!-- Responsive Image -->
-        <img
-          class="img-fluid"
-          src="art.webp"
-          alt="art"
-          width="800"
-          height="500"
-        />
-
-        <br /><br />
-
-        <!-- Jumbotron -->
-        <div class="mt-4 p-5 bg-primary text-white rounded">
-          <h1>Jumbotron Example</h1>
-
-          <h4>What is a Full Stack Developer?</h4>
-          <p>
-            A full stack developer is a programmer skilled in both front-end and
-            back-end development. They can create the user interface using
-            technologies like HTML, CSS, and JavaScript, and also handle
-            server-side logic, databases, and APIs using tools like Node.js,
-            Python, or PHP. This makes them versatile and capable of building
-            complete web applications from start to finish.
-          </p>
-        </div>
-
-        <br /><br />
-        <!-- Alert -->
-        <div class="alert alert-danger">
-          <strong>Success!</strong> Indicates a successful or positive action.
-        </div>
-
-        <!-- Alert link -->
-        <div class="alert alert-success">
-          <strong>Success!</strong> You should
-          <a href="#" class="alert-link">read this message</a>.
-        </div>
-
-        <!-- Button -->
-        <button type="button" class="btn btn-light">Light</button> <br /><br />
-        <button type="button" class="btn btn-success">Success</button
-        ><br /><br />
-        <button type="button" class="btn btn-info">Info</button><br /><br />
-        <button type="button" class="btn btn-warning">Warning</button
-        ><br /><br />
-        <button type="button" class="btn btn-danger">Danger</button>
-      </body>
-    </html>
+    <!-- Buttons -->
+    <button type="button" class="btn btn-light">Light</button> <br /><br />
+    <button type="button" class="btn btn-success">Success</button><br /><br />
+    <button type="button" class="btn btn-info">Info</button><br /><br />
+    <button type="button" class="btn btn-warning">Warning</button><br /><br />
+    <button type="button" class="btn btn-danger">Danger</button>
   </body>
 </html>
